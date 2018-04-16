@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var scores = [10, 20, 33, 54, 67, 80, 98, 64];
+
+			var names = ['alex', 'luna', 'maite', 'tom', 'jerry'];
+
+			var mixed = ['alex', 33, 'tom', 666];
+
+			scores[0] = 666;
+
+			function showArr(arr) {
+				var i = 0;
+			while (i < arr.length) {
+				document.write(arr[i] + "<br>");
+				i++;
+				}
+				document.write("<br>");
+			}
+			showArr(scores);
+			showArr(names);
+			showArr(mixed);
+
+
+		</script>
+	</body>
+</html>
