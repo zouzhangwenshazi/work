@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      var Mas = {
+        make:'Maserati',
+        model:'GranCabrio',
+        year:2015,
+        color: 'blue',
+        passengers: 4,
+        mileage: 80000
+      };
+
+      var Lin = {
+        make:'Lincoln',
+        model:'daLu',
+        year:2018,
+        color: 'black',
+        passengers: 4,
+        mileage: 5000
+      };
+
+      function isNew(car) {
+        if(car.year >= 2016 && car.mileage < 10000){
+          document.write("新车");
+        } else {
+          document.write("您的车" + car.make + "不值钱了");
+        }
+        document.write("<br>");
+      }
+      isNew(Mas);
+      isNew(Lin);
+    </script>
+  </body>
+</html>
