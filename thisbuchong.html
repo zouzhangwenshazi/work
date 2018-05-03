@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+      <title>object</title>
+      <meta charset ="utf-8">
+  </head>
+  <body>
+      <script>
+        var flat ={
+          make: "Flat",
+          model: "500",
+          year: 1957,
+          mileage: 2000,
+          color: "Medium Blue",
+          started: false,
+          drive: function () {
+            if (this.started == true) {
+              alert("Zoom Zoom!!");
+            }else{
+              alert("你必须让车先启动");     
+            }
+          },
+          start: function() {
+            this.started = true;
+          },
+          stop: function() {
+            this.started = false;
+          }
+        }
+          
+          flat.start();
+          flat.drive();
+          flat.stop();
+          flat.drive();
+      </script>
+  </body>
+</html>
