@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+      function init() {
+        var obj = document.getElementById("t");
+        alert(obj.innerHTML + ", 这就是个字符串");
+        obj.innerHTML = "改个名字";
+      }
+      window.onload = init;
+    </script>
+  </head>
+  <body>
+    <h1 id="t">这是一个标题</h1>
+    
+  </body>
+</html>
