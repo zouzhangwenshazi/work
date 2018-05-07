@@ -7,14 +7,28 @@
     <script>
       function init() {
         var obj = document.getElementById("t");
-        alert(obj.innerHTML + ", 这就是个字符串");
+        var pic = document.getElementById("pic");
+        // alert(obj.innerHTML + ", 这就是个字符串");
         obj.innerHTML = "改个名字";
+      }
+
+      //alert(document.getElementById("pic").getAttribute("alt"));
+      //document.getElementById("pic").setAttribute("src", "2.jpg");
+
+      function changePic() {
+        if (document.getElementById("pic").getAttribute("src") == "1.jpg") {
+          document.getElementById("pic").setAttribute("src", "2.jpg");
+        } else {
+          document.getElementById("pic").setAttribute("src", "1.jpg");
+        }
       }
       window.onload = init;
     </script>
   </head>
+
   <body>
     <h1 id="t">这是一个标题</h1>
-    
+    <img id="pic" src="1.jpg" alt="妇联图片"><br>
+    <button onclick="changePic()">点我试试</button>
   </body>
 </html>
