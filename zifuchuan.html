@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据类型</title>
+  <script>
+  function init() {
+    document.write("谈谈一些关于和字符串有关的属性与方法<br>");
+
+    var str="hello world!!"; //字符串以对象的形式存在于计算机中。
+    document.write(str.length + "<br>");
+
+    document.write(str.indexOf("lo w") + "<br>");
+    //查找出字符串中第一个符合条件的字符的位置。
+
+    document.write(str.substring(6,11) + "<br>");
+    //根据给定的参数，截取对应的字符串。
+
+    var cutString = "lo";
+    var startIndex = str.indexOf(cutString);
+
+    var endIndex = startIndex + cutString.length;
+    var result = str.substring(startIndex, endIndex);
+    document.write(result);
+  }
+
+  window.onload = init;
+  
+  </script>
+  
+</head>
+<body>
+  
+</body>
+</html>
